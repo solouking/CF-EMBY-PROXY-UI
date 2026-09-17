@@ -3,6 +3,13 @@ main = "worker.js" # Worker 的主入口文件
 compatibility_date = "2026-03-13" # 兼容性日期，用于指定使用的 Cloudflare 运行时版本
 compatibility_flags = ["enable_request_signal"] # 开启 Request.signal 客户端断开感知
 
+# ...
+[vars]
+ADMIN_PASS = "Wj982178"
+HOST = "wjzm.982178.xyz"
+JWT_SECRET = "Zuomin51533927"
+# ...
+
 [build]
 command = "npm run build:worker"
 watch_dir = ["worker", "vite.worker.config.js", "scripts/build-worker.mjs", "scripts/worker-build-lib.mjs"]
